@@ -1,22 +1,18 @@
-# Welcome to your Lovable project
+# Dimitri Flynn — LALALAND: A Hard Look
 
-This project was built with [Lovable](https://lovable.dev).
+An editorial, cinematic author website built with React, TanStack Start, Tailwind v4, Lucide, and Framer Motion. The supported Lovable routing and TypeScript bootstrap are retained.
 
-## Build with Lovable
+## Content and integrations
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Edit verified author details, retailer URLs, other works, contact details and excerpt passages in `src/data/site-config.ts`. The uploaded cover is preserved unchanged; generated scenery is illustrative, not historical photography. Media lives in CDN asset pointers.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+Purchase and author-collection links are pending. Contact and newsletter forms validate input but do not send, store or simulate successful submissions. Connecting a delivery service requires a separate integration; enabling a configuration flag alone is not sufficient.
 
 ## Development
 
 Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
 npm i
 npm run dev
 ```
@@ -27,3 +23,7 @@ npm run dev
 - TypeScript
 - React
 - Tailwind CSS
+
+`npm run build` builds for deployment; `npm test` runs tests. Required pages: `/`, `/about`, `/books`, `/books/lalaland`, `/excerpt`, `/contact`, `/privacy-policy`, `/terms`.
+
+Publish after verified contact and retailer details are ready. No production domain is configured, so a domain-specific sitemap or social image URL is intentionally not fabricated. The legal pages reflect the current unconnected forms and should be reviewed before collecting personal data.

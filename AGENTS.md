@@ -28,3 +28,10 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Website architecture
+- Keep the supported TanStack Start router and typed route files instead of adding a second router; the hosting pipeline depends on this bootstrap.
+- Store editable verified author/book information and pending-service status in `src/data/site-config.ts`; shared sections consume one source of truth.
+- Use the shared root header/footer and semantic CSS design tokens on every page; consistent styling prevents secondary pages diverging.
+- Keep newsletter and contact forms client-side with honest unavailable responses until delivery services are configured; no submissions or email addresses are persisted.
+- Publish only brief selected manuscript passages, never the uploaded manuscript file; public excerpts must remain limited.
